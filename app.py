@@ -7,7 +7,7 @@ university = University()
 # Error handler for ValueError
 @app.errorhandler(ValueError)
 def handle_value_error(error):
-    return jsonify({"error": str(error)}), 400
+    return jsonify({"error": 'here1'}), 400
 
 # Student endpoints
 @app.route('/students', methods=['GET', 'POST'])
@@ -25,9 +25,9 @@ def handle_students():
             return jsonify({"error": str(e)}), 400
     
     # GET method
-    #return jsonify({
-    #    "students": [student.to_dict() for student in university.students.values()]
-    #})
+    return jsonify({
+       "students": [student.to_dict() for student in university.students.values()]
+    })
 
 @app.route('/students/<student_id>', methods=['GET'])
 def get_student(student_id):
@@ -86,28 +86,24 @@ def handle_courses():
     # 5. Return course ID
     # For GET:
     # 1. Return list of all courses
+
     if request.method == 'POST':
         data = request.get_json()
         course_type = data.get('course_type')
         try:
-            course=Course(
+            course = Course(
                 name=data['name'],
                 course_type=course_type,
-                max_capacity = data['max_capacity'],
-                difficulty_level=data['difficulty_level'],
-                materials_required=data['materials_required']
-                #add more data types
-                )
-            university.add_course(course)
+                max_capacity=data['max_capacity']
+            )
+
             return jsonify({"id": course.id}), 200
         except (KeyError, ValueError) as e:
-            return jsonify({"error": str(e)}), 400
+            return jsonify({"error": 'here2'}), 400
 
     return jsonify({
         "courses": [courses.to_dict() for courses in university.courses.values()]
     })
-
-
 # Enrollment endpoints
 @app.route('/courses/<course_id>/students/<student_id>', methods=['POST', 'DELETE'])
 def handle_enrollment(course_id, student_id):
@@ -216,4 +212,4 @@ def assign_grade(course_id, student_id):
         return jsonify({"error": str(e)}), 400
 
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=False)
+    app.run(debug=True, use_reloader=False, host='127.0.0.1', port=5000)
