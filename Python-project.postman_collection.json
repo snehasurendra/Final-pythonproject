@@ -1,0 +1,440 @@
+{
+	"info": {
+		"_postman_id": "44bfee10-9f3b-4926-9041-35ad79e33d55",
+		"name": "Python-project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40252202"
+	},
+	"item": [
+		{
+			"name": "Students",
+			"item": [
+				{
+					"name": "Students",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"contact_info\": {\r\n    \"email\": \"john@example.com\",\r\n    \"phone\": \"123-456-7890\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/students",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Students2",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Lovely\",\r\n  \"contact_info\": {\r\n    \"email\": \"john@example.com\",\r\n    \"phone\": \"123-456-7890\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/students",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Students",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"contact_info\": {\r\n    \"email\": \"john@example.com\",\r\n    \"phone\": \"123-456-7890\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/students",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Teachers",
+			"item": [
+				{
+					"name": "Teachers",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Jane Smith\",\r\n  \"contact_info\": {\r\n    \"email\": \"jane@example.com\",\r\n    \"phone\": \"123-456-7890\"\r\n  },\r\n  \"specializations\": [\"math\", \"physics\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/teachers",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"teachers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Teachers",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Jane Smith\",\r\n  \"contact_info\": {\r\n    \"email\": \"jane@example.com\",\r\n    \"phone\": \"123-456-7890\"\r\n  },\r\n  \"specializations\": [\"math\", \"physics\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/teachers",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"teachers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Courses",
+			"item": [
+				{
+					"name": "Course-math",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"type\": \"math\",\r\n  \"name\": \"Advanced Calculus\",\r\n  \"max_capacity\": 30,\r\n  \"difficulty_level\": \"advanced\",\r\n  \"materials_required\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/courses",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Course-art",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"type\": \"art\",\r\n  \"name\": \"Introduction to Painting\",\r\n  \"max_capacity\": 20,\r\n  \"materials_required\": [\"canvas\", \"paint brushes\", \"acrylic paint\"],\r\n  \"difficulty_level\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/courses",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"courses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Course",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						},
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"type\": \"art\",\r\n  \"name\": \"Introduction to Painting\",\r\n  \"max_capacity\": 20,\r\n  \"materials_required\": [\"canvas\", \"paint brushes\", \"acrylic paint\"],\r\n  \"difficulty_level\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{localhost}}/courses",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"courses"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Enroll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/courses/649f068a-cec4-4f05-9aa0-43a3f36d7aaa/students/07257508-f655-4773-90f7-722f5309bd27",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"courses",
+						"649f068a-cec4-4f05-9aa0-43a3f36d7aaa",
+						"students",
+						"07257508-f655-4773-90f7-722f5309bd27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/courses/649f068a-cec4-4f05-9aa0-43a3f36d7aaa/students/07257508-f655-4773-90f7-722f5309bd27",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"courses",
+						"649f068a-cec4-4f05-9aa0-43a3f36d7aaa",
+						"students",
+						"07257508-f655-4773-90f7-722f5309bd27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Course-assign",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/courses/649f068a-cec4-4f05-9aa0-43a3f36d7aaa/teacher/40a2d28e-ba89-432b-8326-33ac194fda69",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"courses",
+						"649f068a-cec4-4f05-9aa0-43a3f36d7aaa",
+						"teacher",
+						"40a2d28e-ba89-432b-8326-33ac194fda69"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
