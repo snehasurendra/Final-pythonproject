@@ -94,12 +94,14 @@ def handle_courses():
             course = Course(
                 name=data['name'],
                 course_type=course_type,
-                max_capacity=data['max_capacity']
+                max_capacity=data['max_capacity'],
+                difficulty_level=data['difficulty_level'],
+                materials_required=data['materials_required']
             )
-
+            university.add_course(course)
             return jsonify({"id": course.id}), 200
         except (KeyError, ValueError) as e:
-            return jsonify({"error": 'here2'}), 400
+            return jsonify({"error": str(e)}), 400
 
     return jsonify({
         "courses": [courses.to_dict() for courses in university.courses.values()]
@@ -212,4 +214,4 @@ def assign_grade(course_id, student_id):
         return jsonify({"error": str(e)}), 400
 
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=False, host='127.0.0.1', port=5000)
+    app.run(debug=True, use_reloader=True, host='127.0.0.1', port=5000)
